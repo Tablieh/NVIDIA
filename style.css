@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+#wrapper{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+#logo{
+    float: left;
+}
+header{
+    display: flex;
+}
+header nav a{
+    padding-top: left;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+#menu{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-bottom: 1em;
+}
+#banner{
+    position: relative;
+    margin: 0;
+    height: 250px;
+    overflow: hidden;
+}
+#banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#banner figcaption{
+    width: 100%;
+    background-color: rgba(0, 75, 0, 0.5);
+    color: #fff;
+    padding: 0.5em;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+}
+figcaption h1{
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+}
+.lien{
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    float: right;
+    background-color: #6aa821;
+    color: #fff;
+    margin: 0;
+
+}
+aside i {
+   font-size: 2em;
+}
+#social{
+    display: flex;
+    justify-content: space-between;
+}
+
+#LogoSmall{
+    float: left;
+    width: 30px;
+    margin: 0 10px;
+}
+aside{
+    float: right;
+    padding: 0 1em 2em;
+    background-color: #6aa821;
+    color: #fff;
+    margin-left: 1em;
+    width: 25%;
+    text-align: center;
+}
+#logonoir{
+    width: 80px;
+}
+aside p{
+    text-align: left;
+}
+#greentri{
+    width: 30px;
+    margin-top: -4px;
+}
+#border_Img{
+    text-align: center;
+    clear: both;
+    border-top: 3px solid #6aa821;
+}
+footer{
+    width: 100%;
+    display: flex;
+    
+}
+footer > *{
+    flex: 1;
+}
+#submit{
+    background-color: #6aa821;
+    color: #fff;
+    width: 25%;
+}
+
+#img_flex{
+    display: flex;
+    
+    justify-content: space-between;
+    
+
+}
+#img_flex img{
+    width: 75px;
+    height: 75px;
+    margin: 0 0.3em;
+    object-fit: cover;
+}
+#burger{
+    display: none;
+    color: black;
+}
+@media screen and (max-width:375px){
+   
+    header{
+        background-color: #6aa821;
+        position: relative;
+        flex-direction:column;
+        
+    }
+  
+    #menu {
+        margin: 0 0.5em;
+        
+        flex-direction:column;
+        width: 100%;
+        padding-bottom: 0;
+    }
+    #burger{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin-top: 0.5em;
+    
+    }
+   #logo{
+       margin-top: 1em;
+       width: 75px;
+       float: none;
+       display: flex;
+       align-self: center;
+   }
+   main{
+       display: flex;
+       flex-direction:column;
+   }
+   figcaption h1{
+       display: none;
+   }
+    article{
+        margin-top: 1em;    
+   }
+    aside{
+    float:none;
+    width: 100%;
+    margin: 0;
+    }
+    #menu{
+        margin-bottom: 1em;
+        align-items: center;
+    }
+    #banner figcaption{
+        display: flex;
+        flex-direction: column;
+    }
+    #Social{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+    }
+    aside>*:not(#Social){
+        display: none;
+    }
+    footer{
+
+        flex-direction:column;
+    }
+    #submit{
+        display: flex;
+        flex-direction: column;
+    }
+    h1,h2,h3,h4{
+        font-family: 'DotGothic16', sans-serif;
+    }
+}
